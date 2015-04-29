@@ -10,7 +10,7 @@ Used together with [request](https://github.com/request/request) or the built-in
 
 Accepts a response object, with a `statusCode` property, as first argument and returns `true` if the status code was within the `2xx` range, otherwise it returns `false`.
 
-Optionally it takse a callback as second argument, which is called with an error object only if the response was non-successful. The error exposes `statusCode`, `headers` and `body` properties, copied from the response.
+Optionally it takse a callback as second argument, which is called with an error object only if the response was non-successful. The error has `statusCode`, `headers` and `body` properties set, copied from the response.
 
 ```javascript
 var request = require('request');
