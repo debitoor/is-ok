@@ -1,4 +1,4 @@
-# is-ok
+# is-ok [![Build Status](https://travis-ci.org/e-conomic/is-ok.svg)](https://travis-ci.org/e-conomic/is-ok)
 
 Check if a HTTP response is successful.
 
