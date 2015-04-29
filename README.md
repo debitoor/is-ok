@@ -8,9 +8,9 @@ Check if a HTTP response is successful.
 
 Used together with [request](https://github.com/request/request) or the built-in `http` module.
 
-Accepts a response object, with a `statusCode` property, as first argument and returns either an error object with `statusCode`, `headers` and `body` property copied from the response, or `undefined` if the status code is within the `2xx` range.
+Accepts a response object, with a `statusCode` property, as first argument and returns `true` if the status code was within the `2xx` range, otherwise it returns `false`.
 
-Optionally it takes a callback as second argument, which is called only if the response is non-successful.
+Optionally it takse a callback as second argument, which is called with an error object only if the response was non-successful. The error exposes `statusCode`, `headers` and `body` properties, copied from the response.
 
 ```javascript
 var request = require('request');
